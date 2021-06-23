@@ -1,0 +1,39 @@
+ALGORITHM phrase
+VAR
+    alphabet :INTEGER :=0;
+    voyelles :INTEGER :=0;
+    mots     :INTEGER :=0;
+   
+
+    phrase   :STRING;
+    
+        
+BEGIN
+    REPEAT
+        read(phrase)
+        write(phrase)
+    UNTIL (phrase := ".")
+
+    for  var i de 1 to  phrase.length do 
+        if (phrase[i]=" ") then
+            mots:=mots+1;
+        end if.
+
+        if (phrase[i]="a" or phrase[i]="e" phrase[i]="o" phrase[i]="u" or phrase[i]="i" or phrase[i]="y") 
+            voyelles:=voyelles+1;
+        end if. 
+
+        if (phrase[i]<>" ") then 
+            alphabet:=alphabet+1 
+        end if.
+
+    end for.
+    write("nombre des alphabets",alphabet);
+    write("nombre de mots",mots);
+    write("nombre de voyelles",voyelles);
+    write(alphabet)
+
+
+
+
+END
