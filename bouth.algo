@@ -5,27 +5,20 @@ VAR
     mots     :INTEGER :=0;
    
 
-    phrase   :STRING;
+    phrase   :CHAR;
     
         
 BEGIN
-    REPEAT
-        read(phrase)
-        write(phrase)
-    UNTIL (phrase := ".")
+   while (phrase<>".")
+        if (phrase =="a" or phrase[i]="e" phrase[i]="o" phrase[i]="u" or phrase[i]="i" or phrase[i]="y") 
+            voyelles++;
+         
 
-    for  var i de 1 to  phrase.length do 
-        if (phrase[i]=" ") then
-            mots:=mots+1;
-        end if.
-
-        if (phrase[i]="a" or phrase[i]="e" phrase[i]="o" phrase[i]="u" or phrase[i]="i" or phrase[i]="y") 
-            voyelles:=voyelles+1;
-        end if. 
-
-        if (phrase[i]<>" ") then 
+        else if (phrase<>" ") then 
             alphabet:=alphabet+1 
-        end if.
+        else 
+        mots++;    
+        
 
     end for.
     write("nombre des alphabets",alphabet);
